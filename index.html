@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCODE</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="form-container">
+            <div class="container-logo">
+                <img src="img/logo-qr-generator.svg" alt="QRCode">
+            </div>
+            <form id="form-qr">
+                <div class="input-wrapper">
+                    <input class="input" placeholder="Enter an url" type="text" name="url" id="url" />
+                    <button id="btn-qr" class="button" type="submit">QR Code</button>
+                </div>
+            </form>
+        </div>
+        <div class="qr-container">
+            <div class="qr-code">
+                <div class="qr-circle">
+                    <div class="qr-image"></div>
+                </div>
+            </div>
+            <div class="qr-options">
+                <a id="link" href="" download>
+                    <button id="btn-download">
+                        Download
+                        <img src="img/descargar.png" alt="">
+                    </button>
+                </a>
+                <button id="btn-share">
+                    Share
+                    <img src="img/compartir.png" alt="">
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
